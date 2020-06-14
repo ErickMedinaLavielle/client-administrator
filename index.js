@@ -25,10 +25,6 @@ const cursos = [
     titulo: "Node.js – Bootcamp Desarrollo Web inc. MVC y REST API’s",
     tecnologia: "Node.js",
   },
-  {
-    titulo: "ReactJS Avanzado – FullStack React GraphQL y Apollo",
-    tecnologia: "React",
-  },
 ];
 //Resolvers
 
