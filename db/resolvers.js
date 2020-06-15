@@ -3,7 +3,7 @@
 const resolvers = {
   Query: {
     obtenerCliente: () => {
-      "cliente";
+      "Cliente";
     },
   },
 };
