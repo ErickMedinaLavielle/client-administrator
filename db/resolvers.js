@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const Usuario = require("../models/Usuario");
 const bcryptjs = require("bcryptjs");
 const jwt = require("jsonwebtoken");
@@ -10,14 +9,11 @@ const crearToken = (usuario, secreta, expiresIn) => {
   return jwt.sign({ id, email, nombre, apellido }, secreta, { expiresIn });
 };
 
-=======
->>>>>>> b23b2a894d060328a11d9ec2bdcad5e0de5704d8
 //Resolvers
 
 const resolvers = {
   Query: {
     obtenerCliente: () => {
-<<<<<<< HEAD
       "Clientes";
     },
   },
@@ -72,9 +68,6 @@ const resolvers = {
       return {
         token: crearToken(existeUsuario, process.env.SECRETA, "24h"),
       };
-=======
-      "Cliente";
->>>>>>> b23b2a894d060328a11d9ec2bdcad5e0de5704d8
     },
   },
 };
