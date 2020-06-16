@@ -13,8 +13,10 @@ const crearToken = (usuario, secreta, expiresIn) => {
 
 const resolvers = {
   Query: {
-    obtenerCliente: () => {
-      "Clientes";
+    obtenerUsuario: async (_, { token }) => {
+      const usuarioId = await jwt.verify(token, process.env.SECRETA);
+
+      return usuarioId;
     },
   },
 
